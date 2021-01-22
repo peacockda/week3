@@ -34,73 +34,60 @@ function pageLoad() {
   // 👇 YOUR CODE BEGINS HERE. DON'T CHANGE ANY OTHER CODE. 👇
 
   // 🔥🔥🔥 YOUR CODE GOES HERE 🔥🔥🔥
-  console.log(database)
 
   numberOfProducts = database.products.length
-  // console.log(`There are ${numberOfProducts} products.`)
 
   products = database.products
-  console.log(products)
   
-  // Select a promotion for #1
+  // Promotion #1
   promotionIndex = getRandomInt(database.promotions.length) - 1
-  // console.log(`Promotion index #1 is ${promotion1Index}`)
   let promotion1 = database.promotions[promotionIndex]
-  // console.log(promotion1)
+  
+  // Assign description for promotion #1
   promotion1Description = promotion1.description
   
-  // console.log(promotion1.type)
-
+  // Assign emoji for promotion #1
   if (promotion1.type == 'shipping') {
-    // console.log(`Shipping!`)
     promotion1Icon = '🚛'
   } else if (promotion1.type == 'discount') {
-    // console.log(`Discount!`)
     promotion1Icon = '🤑'
   } else if (promotion1.type == 'contest') {
-    // console.log(`Contest`)
     promotion1Icon = '🎰'
   } else {
     console.log(`Error! Promotion type not defined!`)
   }
 
+  // Promotion #2
   promotionIndex = getRandomInt(database.promotions.length) - 1
-  // console.log(`Promotion index #1 is ${promotion1Index}`)
   let promotion2 = database.promotions[promotionIndex]
-  // console.log(promotion1)
-  promotion2Description = promotion2.description
   
-  // console.log(promotion1.type)
+  // Assign description for promotion #2
+  promotion2Description = promotion2.description
 
+  // Assign emoji for promotion #2
   if (promotion2.type == 'shipping') {
-    // console.log(`Shipping!`)
     promotion2Icon = '🚛'
   } else if (promotion2.type == 'discount') {
-    // console.log(`Discount!`)
     promotion2Icon = '🤑'
   } else if (promotion2.type == 'contest') {
-    // console.log(`Contest`)
     promotion2Icon = '🎰'
   } else {
     console.log(`Error! Promotion type not defined!`)
   }
-
+  
+  // Promotion #3
   promotionIndex = getRandomInt(database.promotions.length) - 1
-  // console.log(`Promotion index #1 is ${promotion1Index}`)
   let promotion3 = database.promotions[promotionIndex]
-  // console.log(promotion1)
+
+  // Assign description for promotion #3
   promotion3Description = promotion3.description
   
-  // console.log(promotion1.type)
-
+  // Assign emoji for promotion #3
   if (promotion3.type == 'shipping') {
-    // console.log(`Shipping!`)
     promotion3Icon = '🚛'
   } else if (promotion3.type == 'discount') {
-    // console.log(`Discount!`)
     promotion3Icon = '🤑'
   } else if (promotion3.type == 'contest') {
-    // console.log(`Contest`)
     promotion3Icon = '🎰'
   } else {
     console.log(`Error! Promotion type not defined!`)
