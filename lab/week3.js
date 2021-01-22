@@ -34,11 +34,9 @@ function pageLoad() {
   // 👇 YOUR CODE BEGINS HERE. DON'T CHANGE ANY OTHER CODE. 👇
 
   // 🔥🔥🔥 YOUR CODE GOES HERE 🔥🔥🔥
-
-  numberOfProducts = database.products.length
-
   products = database.products
-  
+  numberOfProducts = products.length
+ 
   // Promotion #1
   promotionIndex = getRandomInt(database.promotions.length) - 1
   let promotion1 = database.promotions[promotionIndex]
