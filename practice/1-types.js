@@ -13,6 +13,14 @@ function pageLoad() {
   // Start by hard-coding the values (1-6), then attempt to use the 
   // getRandomInt() function to randomize the values
   
+  let die1 = getRandomInt(6)
+  console.log(`Die 1 is ${die1}`)
+  let die2 = getRandomInt(6)
+  console.log(`Die 2 is ${die2}`)
+
+  let total = die1 + die2
+  console.log(`The total is ${total}`)
+
   //  👆 YOUR CODE ENDS HERE. DON'T CHANGE ANY OTHER CODE 👆
   
   // Leave this alone
